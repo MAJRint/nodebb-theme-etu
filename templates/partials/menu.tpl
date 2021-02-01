@@ -44,24 +44,35 @@
 						</ul>
 					</li>
 
-					<!-- IF !config.disableChat -->
-					<li class="chats dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="{relative_path}/user/{user.userslug}/chats" title="[[global:header.chats]]" id="chat_dropdown" component="chat/dropdown" data-ajaxify="false" role="button">
-							<i component="chat/icon" class="fa fa-comment-o fa-fw unread-count" data-content="{unreadCount.chat}"></i> <span class="visible-xs-inline">[[global:header.chats]]</span>
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="chat_dropdown">
+                    <li id="user_label" class="dropdown">
+						<label for="user-control-list-check" class="dropdown-toggle" data-toggle="dropdown" id="user_dropdown" title="[[global:header.profile]]" role="button">
+							{buildAvatar(user, "md", true)}
+							<span id="user-header-name" class="visible-xs-inline">{user.username}</span>
+						</label>
+						<input type="checkbox" class="hidden" id="user-control-list-check" aria-hidden="true">
+						<ul id="user-control-list" component="header/usercontrol" class="dropdown-menu" aria-labelledby="user_dropdown">
 							<li>
-								<ul component="chat/list" class="chat-list chats-list">
-									<li class="loading-text">
-										<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:chats.loading]]</a>
-									</li>
-								</ul>
+								<a component="header/profilelink" href="{relative_path}/user/{user.userslug}">
+									<i component="user/status" class="fa fa-fw fa-circle status {user.status}"></i> <span component="header/username">{user.username}</span>
+								</a>
 							</li>
-							<li class="notif-dropdown-link"><a href="#" class="mark-all-read" component="chats/mark-all-read">[[modules:chat.mark_all_read]]</a></li>
-							<li class="notif-dropdown-link"><a href="{relative_path}/user/{user.userslug}/chats">[[modules:chat.see_all]]</a></li>
+							{{{each navigation}}}
+                            <!-- IF function.displayMenuItem, @index -->
+                            <li>
+                                <a href="{navigation.route}" title="{navigation.title}" <!-- IF navigation.id -->id="{navigation.id}"<!-- ENDIF navigation.id --><!-- IF navigation.properties.targetBlank --> target="_blank"<!-- ENDIF navigation.properties.targetBlank -->>
+                                    <!-- IF navigation.iconClass -->
+                                    <i class="fa fa-fw {navigation.iconClass}" data-content="{navigation.content}"></i>
+                                    <!-- ENDIF navigation.iconClass -->
+
+                                    <!-- IF navigation.text -->
+                                    <span class="{navigation.textClass}">{navigation.text}</span>
+                                    <!-- ENDIF navigation.text -->
+                                </a>
+                            </li>
+                            <!-- ENDIF function.displayMenuItem -->
+                            {{{end}}}
 						</ul>
 					</li>
-					<!-- ENDIF !config.disableChat -->
 
 					<li id="user_label" class="dropdown">
 						<label for="user-control-list-check" class="dropdown-toggle" data-toggle="dropdown" id="user_dropdown" title="[[global:header.profile]]" role="button">
