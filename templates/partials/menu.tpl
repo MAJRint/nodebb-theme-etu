@@ -14,7 +14,9 @@
 				</a>
 				<!-- ENDIF brand:logo -->
 				<!-- IF config.showSiteTitle -->
-
+				<a href="<!-- IF title:url -->{title:url}<!-- ELSE -->{relative_path}/<!-- ENDIF title:url -->">
+					<h1 class="navbar-brand forum-title">{config.siteTitle}</h1>
+				</a>
 				<!-- ENDIF config.showSiteTitle -->
 
 				<div component="navbar/title" class="visible-xs hidden">
@@ -44,21 +46,24 @@
 						</ul>
 					</li>
 
-                    <li id="user_label" class="dropdown">
-						<label for="user-control-list-check" class="dropdown-toggle" data-toggle="dropdown" id="user_dropdown" title="[[global:header.profile]]" role="button">
-							{buildAvatar(user, "md", true)}
-							<span id="user-header-name" class="visible-xs-inline">{user.username}</span>
-						</label>
-						<input type="checkbox" class="hidden" id="user-control-list-check" aria-hidden="true">
-						<ul id="user-control-list" component="header/usercontrol" class="dropdown-menu" aria-labelledby="user_dropdown">
+					<!-- IF !config.disableChat -->
+					<li class="chats dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="{relative_path}/user/{user.userslug}/chats" title="[[global:header.chats]]" id="chat_dropdown" component="chat/dropdown" data-ajaxify="false" role="button">
+							<i component="chat/icon" class="fa fa-comment-o fa-fw unread-count" data-content="{unreadCount.chat}"></i> <span class="visible-xs-inline">[[global:header.chats]]</span>
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="chat_dropdown">
 							<li>
-								<a component="header/profilelink" href="{relative_path}/user/{user.userslug}">
-									<i component="user/status" class="fa fa-fw fa-circle status {user.status}"></i> <span component="header/username">{user.username}</span>
-								</a>
+								<ul component="chat/list" class="chat-list chats-list">
+									<li class="loading-text">
+										<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:chats.loading]]</a>
+									</li>
+								</ul>
 							</li>
-							
+							<li class="notif-dropdown-link"><a href="#" class="mark-all-read" component="chats/mark-all-read">[[modules:chat.mark_all_read]]</a></li>
+							<li class="notif-dropdown-link"><a href="{relative_path}/user/{user.userslug}/chats">[[modules:chat.see_all]]</a></li>
 						</ul>
 					</li>
+					<!-- ENDIF !config.disableChat -->
 
 					<li id="user_label" class="dropdown">
 						<label for="user-control-list-check" class="dropdown-toggle" data-toggle="dropdown" id="user_dropdown" title="[[global:header.profile]]" role="button">
@@ -94,7 +99,11 @@
 								</a>
 							</li>
 							<li role="presentation" class="divider"></li>
-					 
+							<li>
+								<a component="header/profilelink/edit" href="{relative_path}/user/{user.userslug}/edit">
+									<i class="fa fa-fw fa-edit"></i> <span>[[user:edit-profile]]</span>
+								</a>
+							</li>
 							<li>
 								<a component="header/profilelink/settings" href="{relative_path}/user/{user.userslug}/settings">
 									<i class="fa fa-fw fa-gear"></i> <span>[[user:settings]]</span>
