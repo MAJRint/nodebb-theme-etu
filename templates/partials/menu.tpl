@@ -66,7 +66,9 @@
 					<!-- ENDIF !config.disableChat -->
 
 					<li id="user_label" class="dropdown">
-                        <i class="fas fa-mug-hot"> Forum</i>
+                        <label for="user-control-list-check" class="dropdown-toggle" data-toggle="dropdown" id="user_dropdown" title="[[global:header.profile]]" role="button">
+                            <i class="fas fa-mug-hot"></i>
+                        </label>
                         <input type="checkbox" class="hidden" id="user-control-list-check" aria-hidden="true">
                         <ul id="user-control-list" component="header/usercontrol" class="dropdown-menu" aria-labelledby="user_dropdown">
                             <li>
