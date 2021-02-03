@@ -69,12 +69,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img class="eltern-forum-cafe" src="{config.relative_path}/plugins/nodebb-theme-etu/images/etu-cafe-forum.png" alt="Eltern Forum ETU - Cafe /> <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li>
-                                <a component="header/profilelink" href="{relative_path}/user/{user.userslug}">
-                                    <i component="user/status" class="fa fa-fw fa-circle status {user.status}"></i> <span component="header/username">{user.username}</span>
-                                </a>
-                            </li>
-                        <li role="presentation" class="divider"></li>
+                         
                         {{{each navigation}}}
                         <!-- IF function.displayMenuItem, @index -->
                         <li>
@@ -117,27 +112,14 @@
 									<i class="fa fa-fw fa-circle status away"></i><span <!-- IF user.away -->class="bold"<!-- ENDIF user.away -->> [[global:away]]</span>
 								</a>
 							</li>
-							<li>
-								<a href="#" class="user-status" data-status="dnd">
-									<i class="fa fa-fw fa-circle status dnd"></i><span <!-- IF user.dnd -->class="bold"<!-- ENDIF user.dnd -->> [[global:dnd]]</span>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="user-status" data-status="offline">
-									<i class="fa fa-fw fa-circle status offline"></i><span <!-- IF user.offline -->class="bold"<!-- ENDIF user.offline -->> [[global:invisible]]</span>
-								</a>
-							</li>
+
 							<li role="presentation" class="divider"></li>
 							<li>
-								<a component="header/profilelink/edit" href="{relative_path}/user/{user.userslug}/edit">
-									<i class="fa fa-fw fa-edit"></i> <span>[[user:edit-profile]]</span>
+								<a href="https://eltern-team-up.de/mein-profil">
+									<i class="fa fa-fw fa-edit"></i> <span>Mein Profil</span>
 								</a>
 							</li>
-							<li>
-								<a component="header/profilelink/settings" href="{relative_path}/user/{user.userslug}/settings">
-									<i class="fa fa-fw fa-gear"></i> <span>[[user:settings]]</span>
-								</a>
-							</li>
+
 							<!-- IF showModMenu -->
 							<li role="presentation" class="divider"></li>
 							<li class="dropdown-header">[[pages:moderator-tools]]</li>
@@ -158,15 +140,11 @@
 							</li>
 							<!-- ENDIF showModMenu -->
 							<li role="presentation" class="divider"></li>
-							<li component="user/logout">
-								<form method="post" action="{relative_path}/logout">
-									<input type="hidden" name="_csrf" value="{config.csrf_token}">
-									<input type="hidden" name="noscript" value="true">
-									<button type="submit" class="btn btn-link">
-										<i class="fa fa-fw fa-sign-out"></i><span> [[global:logout]]</span>
-									</button>
-								</form>
-							</li>
+							<li>
+                                <a href="https://eltern-team-up.de/logout">
+                                    <i class="fa fa-fw fa-edit"></i> <span>Logout</span>
+                                </a>
+                            </li>
 						</ul>
 					</li>
 
