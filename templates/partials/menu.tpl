@@ -201,29 +201,22 @@
 				<ul id="main-nav" class="nav navbar-nav">
 				<li class="{navigation.class}">
                     <a class="navigation-link" href="https://eltern-team-up.de/suche" title="Eltern Community - Suche">
-
                         <i class="fa fa-fw fa-search"></i>
-                   
-                        <span class="{navigation.textClass}">Profilsuche</span>
+                        <span class="{navigation.textClass} desktopnav">Profilsuche</span>
+                    </a>
+                </li>
+                <li class="{navigation.class}">
+                    <a class="navigation-link" href="https://eltern-team-up.de/bonus-programm" title="Eltern Forum & Community - Bonus">
+                        Bonus
 
                     </a>
                 </li>
-					{{{each navigation}}}
-					<!-- IF function.displayMenuItem, @index -->
-					<li class="{navigation.class}">
-						<a class="navigation-link" href="{navigation.route}" title="{navigation.title}" <!-- IF navigation.id -->id="{navigation.id}"<!-- ENDIF navigation.id --><!-- IF navigation.properties.targetBlank --> target="_blank"<!-- ENDIF navigation.properties.targetBlank -->>
-							<!-- IF navigation.iconClass -->
-							<i class="fa fa-fw {navigation.iconClass}" data-content="{navigation.content}"></i>
-							<!-- ENDIF navigation.iconClass -->
+                 <li class="{navigation.class}">
+                    <a class="navigation-link" href="https://eltern-team-up.de/premium" title="Eltern Community & Forum - Premium">
 
-							<!-- IF navigation.text -->
-							<span class="{navigation.textClass}">{navigation.text}</span>
-							<!-- ENDIF navigation.text -->
-						</a>
-					</li>
-					<!-- ENDIF function.displayMenuItem -->
-					{{{end}}}
-
+                        PREMIUM
+                    </a>
+                </li>
 				</ul>
 
 				<!-- ELSE -->
