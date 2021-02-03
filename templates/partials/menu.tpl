@@ -223,10 +223,10 @@
 					<!-- ENDIF function.displayMenuItem -->
 					{{{end}}}
 					<li class="{navigation.class}">
-                        <a class="navigation-link" href="https://eltern-team-up.de/suche" title="Eltern Community - Suche"
+                        <a class="navigation-link" href="https://eltern-team-up.de/suche" title="Eltern Community - Suche">
 
-                            <i class="fa fa-search"></i>
-                   
+                            <i class="fa fa-fw fa-search"></i>
+
                         </a>
                     </li>
 				</ul>
