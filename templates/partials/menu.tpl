@@ -65,33 +65,10 @@
 					</li>
 					<!-- ENDIF !config.disableChat -->
 
-					<li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img class="eltern-forum-cafe" src="{config.relative_path}/plugins/nodebb-theme-etu/images/etu-cafe-forum.png" alt="Eltern Forum ETU - Cafe /> <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-
-                        {{{each navigation}}}
-                        <!-- IF function.displayMenuItem, @index -->
-                        <li>
-                            <a href="{navigation.route}" title="{navigation.title}" <!-- IF navigation.id -->id="{navigation.id}"<!-- ENDIF navigation.id --><!-- IF navigation.properties.targetBlank --> target="_blank"<!-- ENDIF navigation.properties.targetBlank -->>
-                                <!-- IF navigation.iconClass -->
-                                <i class="fa fa-fw {navigation.iconClass}" data-content="{navigation.content}"></i>
-                                <!-- ENDIF navigation.iconClass -->
-
-                                <!-- IF navigation.text -->
-                                <span class="{navigation.textClass}">{navigation.text}</span>
-                                <!-- ENDIF navigation.text -->
-                            </a>
-                        </li>
-                        <!-- ENDIF function.displayMenuItem -->
-                        {{{end}}}
-                        </ul>
-                    </li>
-
 
 					<li id="user_label" class="dropdown">
 						<label for="user-control-list-check" class="dropdown-toggle" data-toggle="dropdown" id="user_dropdown" title="[[global:header.profile]]" role="button">
-							<img class="eltern-forum-cafe" src="{config.relative_path}/plugins/nodebb-theme-etu/images/etu-cafe-forum.png" alt="Eltern Forum ETU - Cafe /> <b class="caret"></b></a>
+							<img src="{config.relative_path}/plugins/nodebb-theme-etu/images/etu-cafe-forum.png" alt="Eltern Forum ETU - Cafe /> <b class="caret"></b></a>
 							<span id="user-header-name" class="visible-xs-inline">{user.username}</span>
 						</label>
 						<input type="checkbox" class="hidden" id="user-control-list-check" aria-hidden="true">
@@ -222,6 +199,15 @@
 				</ul>
 
 				<ul id="main-nav" class="nav navbar-nav">
+				<li class="{navigation.class}">
+                    <a class="navigation-link" href="https://eltern-team-up.de/suche" title="Eltern Community - Suche">
+
+                        <i class="fa fa-fw fa-search"></i>
+                        <!-- IF navigation.text -->
+                        <span class="{navigation.textClass}">Profilsuche</span>
+                        <!-- ENDIF navigation.text -->
+                    </a>
+                </li>
 					{{{each navigation}}}
 					<!-- IF function.displayMenuItem, @index -->
 					<li class="{navigation.class}">
@@ -237,13 +223,7 @@
 					</li>
 					<!-- ENDIF function.displayMenuItem -->
 					{{{end}}}
-					<li class="{navigation.class}">
-                        <a class="navigation-link" href="https://eltern-team-up.de/suche" title="Eltern Community - Suche">
 
-                            <i class="fa fa-fw fa-search"></i>
-
-                        </a>
-                    </li>
 				</ul>
 
 				<!-- ELSE -->
