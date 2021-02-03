@@ -154,14 +154,14 @@
 				<ul id="logged-out-menu" class="nav navbar-nav navbar-right">
 					<!-- IF allowRegistration -->
 					<li>
-						<a href="{relative_path}/register">
+						<a href="https://eltern-team-up.de/registrieren">
 							<i class="fa fa-pencil fa-fw hidden-sm hidden-md hidden-lg"></i>
 							<span>[[global:register]]</span>
 						</a>
 					</li>
 					<!-- ENDIF allowRegistration -->
 					<li>
-						<a href="{relative_path}/login">
+						<a href="https://eltern-team-up.de/login">
 							<i class="fa fa-sign-in fa-fw hidden-sm hidden-md hidden-lg"></i>
 							<span>[[global:login]]</span>
 						</a>
@@ -231,7 +231,7 @@
 				<!-- ELSE -->
 				<ul class="nav navbar-nav navbar-right">
 					<li>
-						<a href="{relative_path}/login">
+						<a href="https://eltern-team-up.de/login">
 							<i class="fa fa-sign-in fa-fw hidden-sm hidden-md hidden-lg"></i>
 							<span>[[global:login]]</span>
 						</a>
