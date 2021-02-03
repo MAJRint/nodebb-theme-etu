@@ -203,9 +203,9 @@
                     <a class="navigation-link" href="https://eltern-team-up.de/suche" title="Eltern Community - Suche">
 
                         <i class="fa fa-fw fa-search"></i>
-                        <!-- IF navigation.text -->
+                   
                         <span class="{navigation.textClass}">Profilsuche</span>
-                        <!-- ENDIF navigation.text -->
+
                     </a>
                 </li>
 					{{{each navigation}}}
