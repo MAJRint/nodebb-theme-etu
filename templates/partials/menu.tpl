@@ -67,7 +67,7 @@
 
 					<li id="user_label" class="dropdown">
                         <label for="user-control-list-check" class="dropdown-toggle" data-toggle="dropdown" id="user_dropdown" title="[[global:header.profile]]" role="button">
-                            <img src="../../etu-cafe-forum.png" alt="Eltern Forum ETU - Cafe />
+                            <img src="./../etu-cafe-forum.png" alt="Eltern Forum ETU - Cafe />
                         </label>
                         <input type="checkbox" class="hidden" id="user-control-list-check" aria-hidden="true">
                         <ul id="user-control-list" component="header/usercontrol" class="dropdown-menu" aria-labelledby="user_dropdown">
