@@ -222,8 +222,31 @@
                 </li>
                  <li class="{navigation.class}">
                     <a class="navigation-link" href="https://eltern-team-up.de/premium" title="Eltern Community & Forum - Premium">
-
                         PREMIUM
+                    </a>
+                </li>
+                 <li class="{navigation.class}">
+                    <a class="navigation-link" href="https://eltern-team-up.de/meine-pakete" title="Eltern Community & Forum - Meine Pakete">
+                         <i class="fa fa-fw fa-dropbox"></i>
+                         <span class="{navigation.textClass} desktopnav">Meine Pakete</span>
+                    </a>
+                </li>
+                <li class="{navigation.class}">
+                    <a class="navigation-link" href="https://eltern-team-up.de/events" title="Eltern Community & Forum - Mama Treffs, Papa Treffs, Playdates">
+                         <i class="fa fa-fw fa-users"></i>
+                         <span class="{navigation.textClass} desktopnav">Treffs & Playdates</span>
+                    </a>
+                </li>
+                <li class="{navigation.class}">
+                    <a class="navigation-link" href="https://eltern-team-up.de/pinnwand" title="Eltern Community & Forum - Pinnwand, Anzeigen">
+                         <i class="fa fa-fw fa-id-card"></i>
+                         <span class="{navigation.textClass} desktopnav">Pinnwand</span>
+                    </a>
+                </li>
+                <li class="{navigation.class}">
+                    <a class="navigation-link" href="https://eltern-team-up.de/meine-nachrichten" title="Eltern Community & Forum - Nachrichten">
+                         <i class="fa fa-fw fa-id-card"></i>
+                         <span class="{navigation.textClass} desktopnav">Meine Nachrichten</span>
                     </a>
                 </li>
 				</ul>
