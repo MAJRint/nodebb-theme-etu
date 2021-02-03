@@ -12,6 +12,9 @@
 		"../nodebb-theme-persona/public/modules/autohidingnavbar.min.js",
 		"../nodebb-theme-persona/public/modules/quickreply.js"
 	],
+	"staticDirs": {
+		"images": "public/images"
+	},
 	"modules": {
 		"pulling.js": "node_modules/pulling/build/pulling-drawer.js"
 	}
