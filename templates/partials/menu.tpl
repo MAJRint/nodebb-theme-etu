@@ -69,7 +69,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img class="eltern-forum-cafe" src="{config.relative_path}/plugins/nodebb-theme-etu/images/etu-cafe-forum.png" alt="Eltern Forum ETU - Cafe /> <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                         
+
                         {{{each navigation}}}
                         <!-- IF function.displayMenuItem, @index -->
                         <li>
@@ -222,6 +222,13 @@
 					</li>
 					<!-- ENDIF function.displayMenuItem -->
 					{{{end}}}
+					<li class="{navigation.class}">
+                        <a class="navigation-link" href="https://eltern-team-up.de/suche" title="Eltern Community - Suche"
+
+                            <i class="fa fa-search"></i>
+                   
+                        </a>
+                    </li>
 				</ul>
 
 				<!-- ELSE -->
