@@ -209,6 +209,12 @@
 
 				<ul id="main-nav" class="nav navbar-nav">
 				<li class="{navigation.class}">
+                    <a class="navigation-link" href="https://eltern-team-up.de" title="Eltern Community - Suche">
+                        <i class="fa fa-fw fa-home"></i>
+                        <span class="{navigation.textClass} desktopnav">Startseite</span>
+                    </a>
+                </li>
+				<li class="{navigation.class}">
                     <a class="navigation-link" href="https://eltern-team-up.de/suche" title="Eltern Community - Suche">
                         <i class="fa fa-fw fa-search"></i>
                         <span class="{navigation.textClass} desktopnav">Profilsuche</span>
