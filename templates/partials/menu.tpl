@@ -66,11 +66,9 @@
 					<!-- ENDIF !config.disableChat -->
 
 					<li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="{config.relative_path}/plugins/nodebb-theme-etu/images/etu-cafe-forum.png" alt="Eltern Forum ETU - Cafe /> <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-
-        
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img class="eltern-forum-cafe" src="{config.relative_path}/plugins/nodebb-theme-etu/images/etu-cafe-forum.png" alt="Eltern Forum ETU - Cafe /> <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
                             <li>
                                 <a component="header/profilelink" href="{relative_path}/user/{user.userslug}">
                                     <i component="user/status" class="fa fa-fw fa-circle status {user.status}"></i> <span component="header/username">{user.username}</span>
