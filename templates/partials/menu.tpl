@@ -112,7 +112,22 @@
 									<i class="fa fa-fw fa-circle status away"></i><span <!-- IF user.away -->class="bold"<!-- ENDIF user.away -->> [[global:away]]</span>
 								</a>
 							</li>
+							<li role="presentation" class="divider"></li>
+                            {{{each navigation}}}
+                            <!-- IF function.displayMenuItem, @index -->
+                            <li>
+                                <a href="{navigation.route}" title="{navigation.title}" <!-- IF navigation.id -->id="{navigation.id}"<!-- ENDIF navigation.id --><!-- IF navigation.properties.targetBlank --> target="_blank"<!-- ENDIF navigation.properties.targetBlank -->>
+                                    <!-- IF navigation.iconClass -->
+                                    <i class="fa fa-fw {navigation.iconClass}" data-content="{navigation.content}"></i>
+                                    <!-- ENDIF navigation.iconClass -->
 
+                                    <!-- IF navigation.text -->
+                                    <span class="{navigation.textClass}">{navigation.text}</span>
+                                    <!-- ENDIF navigation.text -->
+                                </a>
+                            </li>
+                            <!-- ENDIF function.displayMenuItem -->
+                            {{{end}}}
 							<li role="presentation" class="divider"></li>
 							<li>
 								<a href="https://eltern-team-up.de/mein-profil">
