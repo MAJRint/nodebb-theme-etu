@@ -91,7 +91,7 @@
 
 					<li id="user_label" class="dropdown">
 						<label for="user-control-list-check" class="dropdown-toggle" data-toggle="dropdown" id="user_dropdown" title="[[global:header.profile]]" role="button">
-							{buildAvatar(user, "md", true)}
+							<img class="eltern-forum-cafe" src="{config.relative_path}/plugins/nodebb-theme-etu/images/etu-cafe-forum.png" alt="Eltern Forum ETU - Cafe /> <b class="caret"></b></a>
 							<span id="user-header-name" class="visible-xs-inline">{user.username}</span>
 						</label>
 						<input type="checkbox" class="hidden" id="user-control-list-check" aria-hidden="true">
