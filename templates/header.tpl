@@ -35,7 +35,10 @@
 				<!-- IMPORT partials/menu.tpl -->
 			</div>
 		</nav>
-		<div>-</div>
+		<div class="col-md-12 text-center">
+            <img src="{config.relative_path}/plugins/nodebb-theme-etu/images/eltern-forum-logo-etu.png"  alt="Eltern Forum ETU" class="img-responsive tocenter" />
+        </div>
+
 		<div class="container" id="content">
 		<!-- IMPORT partials/noscript/warning.tpl -->
 		<!-- IMPORT partials/noscript/message.tpl -->
