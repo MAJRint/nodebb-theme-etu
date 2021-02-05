@@ -209,48 +209,48 @@
 
 				<ul id="main-nav" class="nav navbar-nav">
 				<li class="{navigation.class}">
-                    <a class="navigation-link" href="https://eltern-team-up.de" title="Eltern Community - Suche">
+                    <a class="navigation-link" href="https://eltern-team-up.de" title="Startseite - Eltern Team Up">
                         <i class="fa fa-fw fa-home"></i>
                         <span class="{navigation.textClass} desktopnav">Startseite</span>
                     </a>
                 </li>
 				<li class="{navigation.class}">
-                    <a class="navigation-link" href="https://eltern-team-up.de/suche" title="Eltern Community - Suche">
+                    <a class="navigation-link" href="https://eltern-team-up.de/suche" title="Suche - Papas & Mamas kennenlernen">
                         <i class="fa fa-fw fa-search"></i>
                         <span class="{navigation.textClass} desktopnav">Profilsuche</span>
                     </a>
                 </li>
                 <li class="{navigation.class}">
-                    <a class="navigation-link" href="https://eltern-team-up.de/bonus-programm" title="Eltern Forum & Community - Bonus">
+                    <a class="navigation-link" href="https://eltern-team-up.de/bonus-programm" title="Punkte sammeln & kostenlos Premium nutzen">
                         Bonus
 
                     </a>
                 </li>
                  <li class="{navigation.class}">
-                    <a class="navigation-link" href="https://eltern-team-up.de/premium" title="Eltern Community & Forum - Premium">
+                    <a class="navigation-link" href="https://eltern-team-up.de/premium" title="Premium Mitgliedschaft">
                         PREMIUM
                     </a>
                 </li>
                  <li class="{navigation.class}">
-                    <a class="navigation-link" href="https://eltern-team-up.de/meine-pakete" title="Eltern Community & Forum - Meine Pakete">
+                    <a class="navigation-link" href="https://eltern-team-up.de/meine-pakete" title="Deine Pakete">
                          <i class="fa fa-fw fa-dropbox"></i>
                          <span class="{navigation.textClass} desktopnav">Meine Pakete</span>
                     </a>
                 </li>
                 <li class="{navigation.class}">
-                    <a class="navigation-link" href="https://eltern-team-up.de/events" title="Eltern Community & Forum - Mama Treffs, Papa Treffs, Playdates">
+                    <a class="navigation-link" href="https://eltern-team-up.de/events" title="Mama Treffs, Papa Treffs, Playdates">
                          <i class="fa fa-fw fa-users"></i>
                          <span class="{navigation.textClass} desktopnav">Treffs & Playdates</span>
                     </a>
                 </li>
                 <li class="{navigation.class}">
-                    <a class="navigation-link" href="https://eltern-team-up.de/pinnwand" title="Eltern Community & Forum - Pinnwand, Anzeigen">
+                    <a class="navigation-link" href="https://eltern-team-up.de/pinnwand" title="Pinnwand, Anzeigen">
                          <i class="fa fa-fw fa-id-card"></i>
                          <span class="{navigation.textClass} desktopnav">Pinnwand</span>
                     </a>
                 </li>
                 <li class="{navigation.class}">
-                    <a class="navigation-link" href="https://eltern-team-up.de/meine-nachrichten" title="Eltern Community & Forum - Nachrichten">
+                    <a class="navigation-link" href="https://eltern-team-up.de/meine-nachrichten" title="Nachrichten">
                          <i class="fa fa-fw fa-id-card"></i>
                          <span class="{navigation.textClass} desktopnav">Meine Nachrichten</span>
                     </a>
