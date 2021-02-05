@@ -251,7 +251,7 @@
                 </li>
                 <li class="{navigation.class}">
                     <a class="navigation-link" href="https://eltern-team-up.de/meine-nachrichten" title="Nachrichten">
-                         <i class="fa fa-fw fa-id-card"></i>
+                         <i class="fa fa-fw fa-envelope"></i>
                          <span class="{navigation.textClass} desktopnav">Meine Nachrichten</span>
                     </a>
                 </li>
