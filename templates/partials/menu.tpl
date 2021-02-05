@@ -209,7 +209,7 @@
 
 				<ul id="main-nav" class="nav navbar-nav">
 				<li class="{navigation.class}">
-                    <a class="navigation-link" href="https://eltern-team-up.de" title="Startseite - Eltern Team Up">
+                    <a class="navigation-link" href="https://eltern-team-up.de" title="Startseite - Eltern Community & Forum">
                         <i class="fa fa-fw fa-home"></i>
                         <span class="{navigation.textClass} desktopnav">Startseite</span>
                     </a>
