@@ -67,7 +67,7 @@
 
 
 					<li id="user_label" class="dropdown">
-						<label for="user-control-list-check" class="dropdown-toggle" data-toggle="dropdown" id="user_dropdown" title="[[global:header.profile]]" role="button">
+						<label for="user-control-list-check" class="dropdown-toggle" data-toggle="dropdown" id="user_dropdown" title="Eltern Forum - Café" role="button">
 							<img src="{config.relative_path}/plugins/nodebb-theme-etu/images/etu-cafe-forum.png" alt="Eltern Forum ETU - Cafe /> <b class="caret"></b></a>
 							<span id="user-header-name" class="visible-xs-inline">{user.username}</span>
 						</label>
