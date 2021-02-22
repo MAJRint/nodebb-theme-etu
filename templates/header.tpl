@@ -40,5 +40,4 @@
         </div>
 
 		<div class="container" id="content">
-		<!-- IMPORT partials/noscript/warning.tpl -->
-		<!-- IMPORT partials/noscript/message.tpl -->
+
